@@ -54,6 +54,7 @@ h1:nth-of-type(1)::before {
   background-color: var(--main);
 }
 
+/* ロゴを下部の線に統合 */
 h1:nth-of-type(1)::after {
   content: '';
   position: fixed;
@@ -61,8 +62,14 @@ h1:nth-of-type(1)::after {
   left: 0;
   width: 100%;
   border-bottom: solid 1.5px var(--main);
+  background-image: url('https://raw.githubusercontent.com/09taichi12/canyon/refs/heads/main/assets/logo.png');
+  background-position: 24px calc(100% + 5px);
+  background-repeat: no-repeat;
+  background-size: auto 32px;
+  z-index: 20;
 }
 
+/* 右上のページ番号 */
 section::before {
   font-size: 54px;
   content: attr(data-marpit-pagination);
@@ -79,6 +86,7 @@ section::before {
   font-weight: bolder;
 }
 
+/* 右下のページ番号 */
 section::after {
   font-size: 18px;
   content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
@@ -94,21 +102,7 @@ section::after {
   font-weight: bolder;
   background-color: var(--main);
   color: white;
-}
-
-/* 左下ロゴの追加 */
-section {
-  background-image: url('https://raw.githubusercontent.com/09taichi12/canyon/refs/heads/main/assets/logo.png');
-  background-position: 24px calc(100% - 21px);
-  background-repeat: no-repeat;
-  background-size: auto 32px;
-  z-index: 10;
-}
-
-/* タイトルページとサブタイトルページではロゴを非表示 */
-section.title,
-section.subTitle {
-  background-image: none;
+  z-index: 30;
 }
 
 h2,
@@ -161,6 +155,12 @@ section.title::before,
 section.title::after,
 section.subTitle::before {
   display: none;
+}
+
+/* タイトルページとサブタイトルページではロゴも非表示 */
+section.title h1:nth-of-type(1)::after,
+section.subTitle h1:nth-of-type(1)::after {
+  background-image: none;
 }
 
 section.title,
