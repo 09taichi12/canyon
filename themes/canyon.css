@@ -98,6 +98,7 @@ section::after {
 
 /* 左下ロゴの追加 */
 section {
+  background-color: lightblue; /* 背景色で位置確認 */
   background-image: url('../assets/logo.svg');
   background-position: 24px calc(100% - 21px);
   background-repeat: no-repeat;
