@@ -98,7 +98,7 @@ section::after {
 
 /* 左下ロゴの追加 */
 section {
-  background-image: url('https://raw.githubusercontent.com/09taichi12/canyon/refs/heads/main/assets/logo.svg');
+  background-image: url('https://raw.githubusercontent.com/09taichi12/canyon/refs/heads/main/assets/logo.png');
   background-position: 24px calc(100% - 21px);
   background-repeat: no-repeat;
   background-size: auto 32px;
