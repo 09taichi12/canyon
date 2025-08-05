@@ -12,7 +12,7 @@
 /* General Components */
 :root {
   font-family: Bahnschrift, 'DIN Alternate', 'Meiryo UI', sans-serif;
-  --main: #1F3690;
+  --main: #305097;
   --secondary: #3d3d3d;
   --accent: #ff0051;
 }
@@ -278,17 +278,17 @@ section.subTitle>h1:nth-of-type(1)::after {
 }
 
 .blue::before {
-  background-color: #1F3690;
+  background-color: #305097;
 }
 
 .blue>h2:nth-of-type(1) {
-  color: #1F3690;
+  color: #305097;
   margin: 0;
   font-size: 0.8em;
 }
 
 .blue strong {
-  color: #1F3690;
+  color: #305097;
   text-decoration: underline;
 }
 
